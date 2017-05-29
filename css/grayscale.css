@@ -139,7 +139,7 @@ a {
     background: rgba(255, 255, 255, 0.1); }
 
 .content-section {
-  padding-top: 100px; 
+  padding-top: 100px;
   padding-bottom:100px;
   width: 100%;
 }
@@ -237,7 +237,7 @@ body {
   background-color:#3498db;
 }
 @font-face{
-  src: url('/fonts/din.ttf');
+  src: url('./fonts/din.ttf');
   font-family: din;
 }
 .address-details{
