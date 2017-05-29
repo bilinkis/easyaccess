@@ -237,7 +237,7 @@ body {
   background-color:#3498db;
 }
 @font-face{
-  src: url('./fonts/din.ttf');
+  src: url('../fonts/din.ttf');
   font-family: din;
 }
 .address-details{
