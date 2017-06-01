@@ -21,20 +21,21 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Sans Serif Bold';
   font-weight: 700;
   margin: 0 0 35px;
   letter-spacing: 1px;
   text-transform: uppercase; }
 
 p {
+  font-family:'Sans Serif Regular';
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.4;
   margin: 0 0 25px; }
   @media (min-width: 768px) {
     p {
       font-size: 18px;
-      line-height: 1.6;
+      line-height: 1.4;
       margin: 0 0 35px; } }
 
 a {
@@ -92,13 +93,13 @@ a {
           color: white; } }
 
 .masthead {
-  display: table;
+  display: block;
   width: 100%;
   height: auto;
   padding: 100px 0;
   text-align: center;
   color: white;
-  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+  background: url(../img/intro-bg.jpg) no-repeat center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -234,7 +235,7 @@ body {
   background-color:#FFFFFF;
 }
 .celeste{
-  background-color:#3498db;
+  background-color:#76C2AE;
 }
 @font-face{
   src: url('../fonts/din.ttf');
@@ -246,4 +247,8 @@ body {
 .services{
   background-color: black;
   color:white;
+}
+.boton-intro{
+display:block;
+  top:50px;
 }

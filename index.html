@@ -1,4 +1,4 @@
-s <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -42,18 +42,43 @@ s <!DOCTYPE html>
 </head>
 
 <body id="page-top">
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+(function ($) {
+  $(document).ready(function(){
 
+    // hide .navbar first
+    $(".navbar").hide();
+
+    // fade in .navbar
+    $(function () {
+        $(window).scroll(function () {
+
+                 // set distance user needs to scroll before we start fadeIn
+            if ($(this).scrollTop() > 100) {
+                $('.navbar').fadeIn();
+            } else {
+                $('.navbar').fadeOut();
+            }
+        });
+    });
+
+});
+  }(jQuery));
+</script>
     <!-- Navigation -->
     <nav id="mainNav" class="navbar fixed-top navbar-toggleable-md navbar-light">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
             Menu <i class="fa fa-bars"></i>
         </button>
         <div class="container">
-            <a class="navbar-brand" href="#page-top">EasyAccess</a>
+          <a class="navbar-brand" href="#"><img style="width:30px; height:auto; display:block;" src="./img/argentina-flag.jpg"/>
+            <a class="navbar-brand" href="english/"><img style="width:30px; height:auto; display:block;" src="./img/uk-flag.png"/>
+            <a class="navbar-brand" href="#page-top"><img style="width:200px; height:auto; display:block;" src="./img/logos/logo.png"></a>
             <div class="collapse navbar-collapse" id="navbarExample">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Acerca de nosotros</a>
+                        <a class="nav-link" href="#about">Quienes somos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#team">Equipo</a>
@@ -71,17 +96,18 @@ s <!DOCTYPE html>
     </nav>
 
     <!-- Intro Header -->
-    <header class="masthead">
+    <header class="masthead celeste">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 offset-md-2">
-                        <h1 class="brand-heading">EasyAccess</h1>
-                        <p class="intro-text">Traducciones asd asd asd
-                        </p>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
+                        <!--<h1 class="brand-heading">EasyAccess</h1>-->
+                        <!--<p class="intro-text">Traducciones asd asd asd
+                        </p>-->
+
+                      <!--<a href="#about" class="btn btn-circle page-scroll ">
+                            <i class="fa fa-angle-double-down animated boton-intro"></i>
+                        </a>-->
                     </div>
                 </div>
             </div>
@@ -94,8 +120,8 @@ s <!DOCTYPE html>
             <div class="col-lg-12 col-lg-offset-2">
                 <h2>Acerca de nosotros</h2>
                 <p class="wow lightSpeedIn animated" data-wow-delay=".5s" data-wow-duration=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: lightSpeedIn;font-size:28px;">Easy Access ofrece servicios de enseñanza, traducción e interpretación de inglés a empresas y particulares.</p>
-                <p class="wow rollIn animated" data-wow-delay="1s" data-wow-duration="1s" style="visibility: visible; animation-delay: 1s; animation-name: rollIn;font-size:28px;">Somos un equipo de profesionales capacitadas para brindar el mejor servicio.</p>
-                <p class="wow pulseIn animated" data-wow-delay="1.5s" data-wow-duration="1.5s" style="visibility: visible; animation-delay: 1.5s; animation-name: pulseInX;font-size:28px;">Nos adaptamos a las necesidades de cada cliente y ofreciendo soluciones adecuadas y confiables.
+                <p class="wow rollIn animated" data-wow-delay="1s" data-wow-duration=".5s" style="visibility: visible; animation-delay: 1s; animation-name: rollIn;font-size:28px;">Somos un equipo de profesionales capacitadas para brindar el mejor servicio.</p>
+                <p class="wow lightSpeedIn animated" data-wow-delay="1.5s" data-wow-duration=".5s" style="visibility: visible; animation-delay: 1.5s; animation-name: lightSpeedIn;font-size:28px;">Nos adaptamos a las necesidades de cada cliente, ofreciendo soluciones adecuadas y confiables.
                 </p>
             </div>
         </div>
@@ -185,19 +211,19 @@ s <!DOCTYPE html>
   <br>
   <div class="row">
     <div class="col-sm-4 wow pulse animated" data-wow-delay=".3s" data-wow-duration=".5s">
-      <span class="fa fa-globe" aria-hidden="true" style="color:white; font-size:70px;"></span>
+      <img class="img-responsive" src="img/logos/traducciones.png" style="margin:0 auto;width:100px;height:auto;display:block;center"/>
       <h4>TRADUCCIONES</h4>
-      <p style="font-family:din;font-size:20px;">&bull;Traducciones publicas<br>&bull;Traducciones técnicas y científicas</p>
+      <p>&bull;Traducciones publicas<br>&bull;Traducciones técnicas y científicas</p>
     </div>
     <div class="col-sm-4 wow pulse animated" data-wow-delay=".6s" data-wow-duration="1s">
-      <span class="fa fa-american-sign-language-interpreting" aria-hidden="true" style="color:white; font-size:70px;"></span>
+      <img class="img-responsive" src="img/logos/interpretacion.png" style="margin:0 auto;width:100px;height:auto;display:block;center"/>
       <h4>INTERPRETACIÓN</h4>
-      <p style="font-family:din;font-size:20px;">&bull;Interpretación simultánea: equipamiento portatil para congresos y conferencias<br>&bull;Interpretación consecutiva: reuniones de negocios, ruedas de prensa, visitas empresariales, exposiciones, etc<br>&bull;<i>Whispering: </i>susurrado en tiempo real, para una a tres personas. Reuniones, visitas empresariales, etc</p>
+      <p>&bull;Interpretación simultánea: equipamiento portatil para congresos y conferencias<br>&bull;Interpretación consecutiva: reuniones de negocios, ruedas de prensa, visitas empresariales, exposiciones, etc<br>&bull;<i>Whispering: </i>susurrado en tiempo real, para una a tres personas. Reuniones, visitas empresariales, etc</p>
     </div>
     <div class="col-sm-4 wow pulse animated" data-wow-delay=".9s" data-wow-duration="1.5s">
-      <span class="fa fa-graduation-cap" aria-hidden="true" style="color:white; font-size:70px;"></span>
+      <img class="img-responsive" src="img/logos/educacion.png" style="margin:0 auto;width:100px;height:auto;display:block;center"/>
       <h4>CLASES PARA EMPRESAS</h4>
-      <p style="font-family:din;font-size:20px;">&bull;Individuales y grupales<br>&bull;Inglés general, técnico y de negocios</p>
+      <p>&bull;Individuales y grupales<br>&bull;Inglés general, técnico y de negocios</p>
     </div>
   </div>
 
