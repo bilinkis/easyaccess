@@ -1,0 +1,3 @@
+[submodule "english"]
+	path = /english
+	url = git://github.com/bilinkis/easyaccess.git
